@@ -1,0 +1,226 @@
+.part2 {
+  display: flex;
+  flex-direction: row;
+}
+.part2 .left {
+  width: 35%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.part2 .left .content {
+  display: flex;
+  flex-direction: column;
+}
+.part2 .left .content .topic {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: navy;
+}
+.part2 .left .content .con {
+  padding-top: 10px;
+  font-size: 16px;
+  width: 75%;
+}
+.part2 .left .lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+}
+.part2 .left .lists .list {
+  display: flex;
+  flex-direction: row;
+}
+.part2 .left .lists .list .bullet {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  align-items: center;
+}
+.part2 .left .lists .list .bullet .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px 0;
+}
+.part2 .left .lists .list .bullet .circle .circ {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 5px solid rgb(255, 90, 120);
+  filter: blur(1px);
+}
+.part2 .left .lists .list .bullet .circle .cir {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgb(255, 90, 120);
+  border: 3px solid rgb(255, 255, 255);
+}
+.part2 .left .lists .list .bullet .line {
+  height: calc(100% - 20px);
+  width: 4px;
+  background-color: rgba(8, 129, 185, 0.2);
+}
+.part2 .left .lists .list .content .topic {
+  font-size: 14px;
+  color: navy;
+}
+.part2 .left .lists .list .content .con {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 128, 0.5);
+  padding-bottom: 20px;
+}
+.part2 .right {
+  width: 65%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.part2 .right .form {
+  background-color: rgb(255, 255, 255, 0.95);
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 30px;
+  position: absolute;
+  top: -40%;
+  z-index: 10;
+  border-radius: 8px;
+}
+.part2 .right .form .head {
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  flex-direction: row;
+  display: flex;
+}
+.part2 .right .form .head .icon {
+  height: 100%;
+  max-width: 20%;
+  background-color: transparent;
+}
+.part2 .right .form .head .icon img {
+  object-fit: contain;
+}
+.part2 .right .form .head .topic {
+  width: 80%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  color: navy;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.part2 .right .form form {
+  box-sizing: border-box;
+  padding-top: 15px;
+}
+.part2 .right .form form .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.part2 .right .form form .list input {
+  background-color: rgba(245, 245, 245);
+  outline: none;
+  border: none;
+  width: 49%;
+  box-sizing: border-box;
+  padding: 10px;
+  color: navy;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.part2 .right .form form .list input:placeholder {
+  color: rgba(111, 111, 219, 0.3);
+}
+.part2 .right .form form .optional {
+  box-sizing: border-box;
+  padding: 10px 0 10px 0;
+}
+.part2 .right .form form .optional .topic {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.part2 .right .form form .optional textarea {
+  background-color: rgba(245, 245, 245);
+  outline: none;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  padding-left: 10px;
+  color: navy;
+  font-weight: bold;
+  resize: none;
+}
+.part2 .right .form form .optional textarea:placeholder {
+  color: rgba(111, 111, 219, 0.3);
+}
+.part2 .right .form form .file {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(245, 245, 245);
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+.part2 .right .form form .file svg {
+  width: 40px;
+  background-color: white;
+  padding: 10px;
+}
+.part2 .right .form form .file .fileinput {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-style: dashed;
+  border-color: white;
+  border-left: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.part2 .right .form form .file .fileinput input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.part2 .right .form form .file .fileinput .desc {
+  text-transform: uppercase;
+  color: rgba(111, 111, 219, 0.5);
+  font-weight: bold;
+}
+.part2 .right .form form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: navy;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.part2 .right .form form .contact {
+  font-size: 14px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Asap", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.part1 {
+  width: 100vw;
+  height: 80vh;
+  background-image: linear-gradient(navy, rgb(0, 0, 68));
+  box-sizing: border-box;
+  padding: 0 10vw;
+}
+.part2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(245, 245, 245);
+  box-sizing: border-box;
+  padding: 5vw 10vw;
+}
+.part3 {
+  width: 100vw;
+  height: 90vh;
+  background-image: linear-gradient(rgb(0, 0, 68), navy);
+  box-sizing: border-box;
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+}

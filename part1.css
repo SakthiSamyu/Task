@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@font-face {
+  font-family: "Materio";
+  src: url("Fonts/ITC Ronda Light.ttf");
+}
+.part1 .head {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.part1 .head .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.part1 .head .logo .shape {
+  position: absolute;
+  width: 24px;
+  height: 36px;
+  border-radius: 42% 58% 70% 30% / 67% 69% 31% 33%;
+  background-color: rgb(0, 82, 163);
+}
+.part1 .head .logo .tag {
+  position: absolute;
+  font-family: "Materio";
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+.part1 .head .nav span {
+  margin: 10px;
+  cursor: pointer;
+}
+.part1 .head .nav span:hover {
+  color: white;
+}
+.part1 .content {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.part1 .content .topic {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+.part1 .content .con {
+  padding-top: 10px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+.part1 .foot {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+}
+.part1 .foot .icon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.part1 .foot .icon svg,
+.part1 .foot .icon svg path {
+  fill: rgba(255, 255, 255, 0.5);
+  width: 20px;
+}
+.part1 .foot .icon svg:hover,
+.part1 .foot .icon svg:hover path {
+  fill: white;
+}
