@@ -89,7 +89,7 @@
   box-sizing: border-box;
   padding: 30px;
   position: absolute;
-  top: -40%;
+  top: -35%;
   z-index: 10;
   border-radius: 8px;
 }
@@ -151,6 +151,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5);
 }
 .part2 .right .form form .optional textarea {
   background-color: rgba(245, 245, 245);
